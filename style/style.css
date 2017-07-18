@@ -1,0 +1,53 @@
+.sparkline-graph > svg {
+  /* force for webkit */
+  width: 160px;
+  height: 160px;
+}
+
+td, th {
+  text-align: center;
+}
+
+.input-group {
+  margin: 20px 0;
+}
+
+td:first-of-type, td:first-of-type > div {
+  margin-top: -2px;
+  height: 160px;
+  width: 160px;
+}
+
+thead > tr > th {
+  text-align: center;
+}
+
+.google-map-label {
+  display: block;
+  margin-top: 5px;
+}
+
+.sparklines-graph-details > span {
+  float: right;
+}
+
+.sparklines-graph-details > span:first-child {
+  float: left;
+}
+
+.sparklines-graph-details-meta {
+  margin-top: 10px;
+}
+
+.sparkline-graph, .google-map-label {
+  font-size: 10pt;
+}
+
+#logo {
+  margin-top: 20px;
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
