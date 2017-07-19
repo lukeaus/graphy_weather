@@ -3,14 +3,13 @@
 See your 5 day weather forecast in graphs
 
 
-## Developers
+## Getting Started
 ### Install
 ```bash
-cd .
 npm install
 ```
 
-Create a new file src/secrets.js
+Create a new file ```src/secrets.js```
 ```javascript
 export default {
   // get your key from from: https://home.openweathermap.org/api_keys
@@ -19,6 +18,29 @@ export default {
 
 ```
 
+Run
 ```bash
 npm start
+```
+
+
+## Deploying (to AWS s3)
+[Guide](https://hackernoon.com/how-to-deploy-a-live-reactjs-redux-website-in-under-10-minutes-cadf73cfc75a) to deploying React/Redux on s3
+
+1. Create a new file ```/secrets.js```
+```javascript
+module.exports = {
+  user: 's3-user',
+  accessKeyId: 'MY-ACCESS-KEY-ID',
+  key: 'MY-ACCESS-KEY',
+  bucket: 'MY-S3-BUCKET-NAME',
+};
+```
+
+2. Command line
+```bash
+// build
+npm run build
+// deploy
+npm run deploy
 ```

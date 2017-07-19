@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "build": "node_modules/webpack/bin/webpack.js && mkdir -p build/style/ && cp index.html bundle.js logo.png ./build && cp -r style/ build/style/",
+    "deploy": "node tools/deploy.js"
   },
   "author": "",
   "license": "ISC",
@@ -35,6 +37,7 @@
     "react-router": "^2.0.1",
     "react-sparklines": "^1.6.0",
     "redux": "^3.0.4",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "s3": "^4.4.0"
   }
 }
